@@ -39,6 +39,10 @@ module.exports.isAuthor = (action) => {
     return async (req, res, next) => {
         const {id} = req.params;
         const campground = await Campground.findById(id);
+        if (!campground) {
+            req.flash("error", "Item not found.");
+            return res.redirect("back");
+        }
         if (!campground.author.equals(req.user._id))
         {
             req.flash('error', `You do not have permission to ${action} this campground.`);
@@ -64,6 +68,10 @@ module.exports.validateReview = (req, res, next) => {
 module.exports.isReviewAuthor = async (req, res, next) => {
     const {id, reviewId} = req.params;
     const review = await Review.findById(reviewId);
+    if (!review) {
+        req.flash("error", "Item not found.");
+        return res.redirect("back");
+    }
     if (!review.author.equals(req.user._id))
     {
         req.flash('error', 'You do not have permission to delete this review.');

@@ -1,12 +1,16 @@
 <% layout('/layouts/boilerplate') %>
-<div id="map" style="width: 100%; height: 500px;"></div>
-    <h1>All Campgrounds</h1>
-    <div>
-        <a href="/campgrounds/new">Add Campground</a>
+<div id="cluster-map"></div>
+    <div class="row">
+        <div class="col-6">
+            <h1 id="title" >All Campgrounds</h1>
+        </div>
+        <div class="col-6 mt-2">
+            <a id="add_button" class="btn btn-info float-right" href="/campgrounds/new">Add Campground</a>
+        </div>
     </div>
     <ul>
         <% for (let campground of campgrounds) {%>
-            <div class="card" mb-3>
+            <div class="card mb-3">
                 <div class="row">
                     <div class="col-md-4">
                         <% if (campground.images.length) {%>
