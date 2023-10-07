@@ -29,5 +29,7 @@ YelpCamp is a website where users can create campgrounds by adding its name, des
 
 ## Website Video
 
+https://github.com/IslamAmr155/Yelp-Camp/assets/102327255/db3ebcc3-1727-45b5-ae79-bfbd0b143085
+
 ## Notes
-If the website has not been visited for a long time, it will take a long time to load the next time you try to use it. This is because the website spins down with inactivity and spin back up with a subsequent request due to the use of Render. So if the website takes a long time to load, just wait and give some time 😄.
+If the website has not been visited for a long time, it will take a long time to load the next time you try to visit it. This is because the website spins down with inactivity and spins back up with a subsequent request due to the use of Render. So if the website takes a long time to load, just wait and give it some time 😄.
