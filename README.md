@@ -1,6 +1,6 @@
 <h1 align="center">Yelp-Camp</h1>
 
-![image](https://github.com/IslamAmr155/Yelp-Camp/assets/102327255/f0e253b4-a592-4a58-a088-0156f7d2dd85)
+![image](/media/Yelp_Camp_Home.png)
 
 ## Table of Content
 * [Project Description](#Project-Description)
@@ -29,7 +29,7 @@ YelpCamp is a website where users can create campgrounds by adding its name, des
 
 ## Website Video
 
-https://github.com/IslamAmr155/Yelp-Camp/assets/102327255/db3ebcc3-1727-45b5-ae79-bfbd0b143085
+https://github.com/IslamAmr155/Yelp-Camp/assets/102327255/69a2488a-5fb8-4879-8460-a220a9ca760d
 
 ## Notes
 If the website has not been visited for a long time, it will take a long time to load the next time you try to visit it. This is because the website spins down with inactivity and spins back up with a subsequent request due to the use of Render. So if the website takes a long time to load, just wait and give it some time 😄.
